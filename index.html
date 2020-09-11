@@ -35,11 +35,11 @@ Result : <p id="d"></p>
 <script>
 function calc_equ(){
   var a,b,c,d;
-  a = document.getElementById("a").value;
-  b = document.getElementById("b").value;
+  a = number(document.getElementById("a").value);
+  b = number(document.getElementById("b").value);
   c = document.getElementById("c").value;
 
-  d = (a+c+b);
+  d = number(a+c+b);
 document.getElementById("d").innerhtml = d;
 alert(d);
 }
