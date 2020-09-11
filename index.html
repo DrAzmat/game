@@ -11,7 +11,23 @@
 </head>
 
 <body>
-  <button class="btn btn-light" onclick="alert('hello')"> Button</button>
+  <button class="btn btn-light" onclick="play_pause()"> Button</button>
 <a href="about.html">About</a>
+
+<script>
+var songs = ['krishna_mahabharata-krishna-flute-theme-full.mp3'];
+
+var audio = new Audio();
+audio.src=songs[0];
+
+function play_pause(){
+ if(audio.paused){
+  audio.play();
+ }else{
+  audio.pause();
+ }
+}
+
+</script>
 </body>
 </html
