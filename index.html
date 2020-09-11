@@ -25,9 +25,6 @@ background:#f7f7f7;
   <option value="/">Division</option>
 </select>
 
-<br>
-
-Result : <p id="d"></p>
 
 <button style="background:#eee;color:#333;padding:15px;border:0px;border-radius:8px;" onclick="calc_equ()" >Click me</button>
 
@@ -39,7 +36,6 @@ function calc_equ(){
   b = number(document.getElementById("b").value);
   c = document.getElementById("c").value;
 
-document.getElementById("d").innerhtml = a+c+b;
-alert(d);
+alert(a+c+b);
 }
 </script>
