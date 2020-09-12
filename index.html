@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <button class="btn btn-light" onclick="play_pause()"> Button</button>
+  <button class="btn btn-light" id="audio_btn" onclick="play_pause()"> Button</button>
 <a href="about.html">About</a>
 
 <script>
@@ -23,8 +23,10 @@ audio.src=songs[0];
 function play_pause(){
  if(audio.paused){
   audio.play();
+  $("#audio_btn").html("pause");
  }else{
   audio.pause();
+  $("#audio_btn").html("play");
  }
 }
 
