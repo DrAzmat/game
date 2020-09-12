@@ -11,8 +11,12 @@
 </head>
 
 <body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>NAME</h1>
+  <p>Tag line for your company</p> 
+</div>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
   <!-- Brand -->
   <a class="navbar-brand" href="#">Navbar</a>
 
@@ -25,7 +29,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <button class="nav-link" onclick="play_pause()">Play</button>
+        <a class="nav-link" href="">Link</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="About">Link</a>
@@ -33,6 +37,63 @@
     </ul>
   </div> 
 </nav>
+
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>Music Player</h2>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                Hi there..!! <br>
+                Click the Button below to play the music & click again to pause the music.
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        This is a card in card
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="btn btn-primary" id="audio_btn" onclick="play_pause()">Play</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="card">
+        <div class="card-header">
+            <h2>Card Heading</h2>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                Hi there..!! <br>
+                This is a card text area. where you can write about your card.
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        This is a card in card
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="btn btn-primary">Click me</div>
+        </div>
+    </div>
+</div>
+
+<p class="footer text-center mt-5">&copy; Stunning Hub | 2017-2020</p>
+
+
+
+
+
+
 <script>
 var songs = ['krishna_mahabharata-krishna-flute-theme-full.mp3'];
 
@@ -42,10 +103,10 @@ audio.src=songs[0];
 function play_pause(){
  if(audio.paused){
   audio.play();
-  $("#audio_btn").html("pause");
+  $("#audio_btn").html("Pause");
  }else{
   audio.pause();
-  $("#audio_btn").html("play");
+  $("#audio_btn").html("Play");
  }
 }
 
